@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#ADEAEA",
+    "navigationBarTitleText": "胖狗Music",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

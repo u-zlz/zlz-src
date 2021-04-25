@@ -1,0 +1,84 @@
+<!--pages/index/index.wxml-->
+<view>
+  <!--轮播图--> 
+   <swiper class="Swiper" 
+  autoplay 
+  circular="true"
+  indicator-dots 
+  indicator-color='ivory'
+  indicator-active-color='#ADEAEA' 
+  vertical="true"
+  snap-to-edge='1'
+  > 
+    <swiper-item wx:for="{{bannerdata}}" wx:key="key">
+     <image src='http://p1.music.126.net/OOsT5BTWwDsyzavwrQO_iw==/109951165921336085.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 导航区域 -->
+   <view class="navContainer">
+      <view class="navitem">
+        <text class="iconfont icon-icon-"></text>
+        <text>每日推荐</text>
+      </view>
+      <view class="navitem">
+        <text class="iconfont icon-zhibo"></text>
+        <text>歌单</text>
+      </view>
+      <view class="navitem">
+        <text class="iconfont  icon-diantai"></text>
+        <text>最新排行榜</text>
+      </view>
+      <view class="navitem">
+        <text class="iconfont icon-paihangbang"></text>
+        <text>电台</text>
+      </view>
+      <view class="navitem">
+        <text class="iconfont icon-paihangbang"></text>
+        <text>直播</text>
+      </view>
+   </view>
+   <!--推荐歌曲-->
+    <view class="Music-Container">
+      <view class="Music-header">
+        <text class="Music-title">推荐歌曲</text>
+        <view>
+           <text>为你精心推荐</text>
+           <text class="Music-title-right">查看更多</text>
+        </view>
+      </view>
+      <!-- 推荐内容-->
+        <view>
+          <!-- 此处要添加 enable-flex 会把flax布局 flex container -->
+           <scroll-view class="Music-Socall"     enable-flex	 scroll-x enhanced show-scrollbar='false'>
+              <view class="Music-item">
+                <image  src="/static/img/7788.png"></image>
+                 <text>我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的</text>
+              </view>
+              <view class="Music-item">
+                <image  src="/static/img/7788.png"></image>
+                <text>d爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的ssss</text>
+              </view>
+              <view class="Music-item">
+                <image  src="/static/img/7788.png"></image>
+                <text>的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的</text>
+              </view>
+              <view class="Music-item">
+                <image  src="/static/img/7788.png"></image>
+                <text>的我爱的我爱的我爱的我爱的的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的</text>
+              </view>
+              <view class="Music-item">
+                <image  src="/static/img/7788.png"></image>
+                <text>的我爱的我爱的我爱的我爱的的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的</text>
+              </view>
+              <view class="Music-item">
+                <image  src="/static/img/7788.png"></image>
+                <text>的我爱的我爱的我爱的我爱的的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的</text>
+              </view>
+              <view class="Music-item">
+                <image  src="/static/img/7788.png"></image>
+                <text>的我爱的我爱的我爱的我爱的的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的我爱的</text>
+              </view>
+           </scroll-view>
+        </view>
+  </view>
+</view>
