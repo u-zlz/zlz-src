@@ -1,0 +1,9 @@
+<!--components/navheader.wxml-->
+<!-- 自定义 -->
+<view class="Music-header">
+        <text class="Music-title">{{title}}</text>
+        <view>
+           <text>{{nav}}</text>
+           <text class="Music-title-right">查看更多</text>
+        </view>
+</view>
