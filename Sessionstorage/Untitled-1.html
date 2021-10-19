@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document1</title>
+  </head>
+  <body>
+    
+    <script>
+    /*
+      本地临时存储sessionStorage
+    
+      */
+    let person={
+          name:"zhangsan",
+          age:6,
+          reson:"男"
+       }
+       let arrperson=JSON.stringify(person)
+       sessionStorage.setItem("setperson",arrperson)
+       window.location.replace("Unti2.html")
+    </script>
+  </body>
+</html>
